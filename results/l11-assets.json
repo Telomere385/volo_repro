@@ -1,0 +1,19 @@
+{
+  "scene": "/root/volo-repro/repos/RoboLab/assets/scenes/robovolo/lh_bin_fruits_replace.usda",
+  "layers": 7,
+  "assets": 6,
+  "unresolved": [
+    "OmniPBR.mdl",
+    "gltf/pbr.mdl",
+    "http:/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Metals/RustedMetal.mdl",
+    "http:/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Plastics/Plastic_ABS.mdl",
+    "http:/omniverse-content-production.s3-us-west-2.amazonaws.com/Materials/Base/Wood/Oak.mdl",
+    "http:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/Base/Wood/Bamboo.mdl",
+    "http:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/Base/Wood/Walnut_Planks.mdl",
+    "https:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/2023_1/Base/Plastics/Plastic.mdl",
+    "https:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/2023_1/Base/Plastics/Plastic_Clear.mdl",
+    "https:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/2023_1/vMaterials_2/Paint/Carpaint/Carpaint_Solid.mdl",
+    "https:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/2023_1/vMaterials_2/Plastic/Plastic_Thick_Translucent.mdl",
+    "https:/omniverse-content-production.s3.us-west-2.amazonaws.com/Materials/2023_1/vMaterials_2/Plastic/Plastic_Thick_Translucent_Flakes.mdl"
+  ]
+}

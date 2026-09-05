@@ -1,0 +1,839 @@
+-- The CXX compiler identification is GNU 13.3.0
+-- The C compiler identification is GNU 13.3.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+Starting builds in /root/volo-repro/repos/Vulkan-Profiles/external/Release/64
+Installed Vulkan-Headers (v1.4.341) in 0.3708920478820801 seconds
+Installed Vulkan-Utility-Libraries (v1.4.341) in 4.733502149581909 seconds
+Installed jsoncpp (1.9.6) in 2.1930060386657715 seconds
+Installed valijson (v1.0.2) in 0.39824342727661133 seconds
+-- Found Python3: /venv/main/bin/python3 (found version "3.12.13") found components: Interpreter 
+-- Configuring done (19.9s)
+-- Generating done (0.0s)
+-- Build files have been written to: /root/volo-repro/repos/Vulkan-Profiles/build
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/VP_LUNARG_desktop_max_2024/vp_gpuinfo_amd_radeon_rx_6600__radv_navi23__23_2_99_endeavouros_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/VP_LUNARG_desktop_max_2024/vp_gpuinfo_amd_radeon_rx_6800_xt_2_0_283_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/VP_LUNARG_desktop_max_2024/vp_gpuinfo_intel_r__arc_tm__a750_graphics_0_405_728_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/VP_LUNARG_desktop_max_2024/vp_gpuinfo_intel_r__arc_tm__a750_graphics__dg2__23_2_99_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/VP_LUNARG_desktop_max_2024/vp_gpuinfo_nvidia_geforce_rtx_2060_525_47_26_0_ubuntu_23_04.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/VP_LUNARG_desktop_max_2024/vp_gpuinfo_nvidia_geforce_rtx_2060_537_59_0_0_windows_11.json
+Building a Vulkan 1.3.244 profile
+Stripping duplicated structures. `--strip-duplicate-structs` is set. Eg the output profiles file will contain VkPhysicalDeviceVulkan11Properties not VkPhysicalDeviceMultiviewPropertiesKHR.
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_amd_radeon__tm__r7_370_series_2_0_179_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_amd_radeon_pro_560_0_2_2010_osx_12_6.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_amd_radeon_rx_vega_64_0_2_1911_osx_10_15.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_amd_radv_bonaire__aco__21_1_4_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_apple_m1_0_2_1911_osx_11_2.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_intel_r__arc_tm__a380_graphics_0_405_161_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_intel_r__arc_tm__a380_graphics__dg2__23_0_99_ubuntu_22_04.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_intel_r__hd_graphics_515_0_402_1124_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_intel_r__hd_graphics_520__skl_gt2__21_1_1_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_intel_r__iris_tm__graphics_6000_0_2_1911_osx_10_15.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_nvidia_geforce_gtx_650_ti_472_98_0_0_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_nvidia_geforce_gtx_660_470_74_0_0_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2022/vp_gpuinfo_nvidia_quadro_k4200_0_0_157_53_osx_10_15.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_amd_radeon_pro_vega_48_0_2_2009_osx_13_1.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_amd_radeon_r7_200_series_2_0_179_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_amd_radeon_rx_7800_xt_2_0_294_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_amd_radeon_rx_7800_xt__radv_navi32__24_0_99_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_amd_radv_pitcairn_21_2_1_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_apple_m1_0_2_2015_osx_14_3.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_apple_m3_max_0_2_2015_osx_14_1.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__arc_tm__a380_graphics_0_405_161_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__arc_tm__a380_graphics__dg2__23_0_99_ubuntu_22_04.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__arc_tm__a380_graphics__dg2__24_0_99_opensuse_tumbleweed_20240213.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__arc_tm__a770_graphics_0_405_1234_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__hd_graphics_520_0_402_1274_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__hd_graphics_530__skl_gt2__21_1_99_ubuntu_21_02.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_intel_r__uhd_graphics_630_0_2_2009_osx_13_2.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_nvidia_geforce_gtx_650_ti_474_4_0_0_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_nvidia_geforce_gtx_660_470_161_3_0_ubuntu_22_04.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_nvidia_geforce_gtx_680mx_0_0_159_24_osx_10_15.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2023/vp_gpuinfo_nvidia_geforce_rtx_4070_551_61_0_0_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_amd_radeon_rx_580_series__radv_polaris10__23_1_7_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_amd_radeon_rx_7800_xt_2_0_294_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_amd_radeon_rx_7800_xt__radv_navi32__24_0_99_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_apple_m1_0_2_2015_osx_14_3.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_apple_m3_max_0_2_2015_osx_14_1.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_intel_r__arc_tm__a380_graphics_0_405_161_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_intel_r__arc_tm__a380_graphics__dg2__23_0_99_ubuntu_22_04.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_intel_r__arc_tm__a380_graphics__dg2__24_0_99_opensuse_tumbleweed_20240213.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_intel_r__arc_tm__a770_graphics_0_405_1234_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_intel_r__uhd_graphics_620_0_404_2125_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_intel_r__uhd_graphics_620__whl_gt2__23_1_7_arch_unknown.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_nvidia_geforce_gtx_1060_535_86_5_0_ubuntu_22_04.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_nvidia_geforce_gtx_1060_537_13_0_0_windows_10.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_nvidia_geforce_rtx_4070_551_61_0_0_windows_11.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/config/../VP_LUNARG_desktop_baseline_2024/vp_gpuinfo_radeon_rx_580_series_2_0_258_windows_10.json
+Building a Vulkan 1.1.139 profile
+[  0%] Built target VpCreateDesktopMax2024
+Building a Vulkan 1.2.148 profile
+[  0%] Built target VpLayer_generate
+Building a Vulkan 1.2.197 profile
+[ 14%] Building CXX object layer/CMakeFiles/ProfilesLayer.dir/profiles_settings.cpp.o
+[ 42%] Building CXX object layer/CMakeFiles/ProfilesLayer.dir/profiles_json.cpp.o
+[ 42%] Building CXX object layer/CMakeFiles/ProfilesLayer.dir/profiles_util.cpp.o
+[ 42%] Built target VpCreateDesktopBaseline
+[ 57%] Building CXX object layer/CMakeFiles/ProfilesLayer.dir/profiles_interface.cpp.o
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+[ 71%] Building CXX object layer/CMakeFiles/ProfilesLayer.dir/profiles_generated.cpp.o
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+[ 85%] Building CXX object layer/CMakeFiles/ProfilesLayer.dir/vk_layer_table.cpp.o
+WARNING: Member 'pCopyDstLayouts' in struct 'VkPhysicalDeviceHostImageCopyProperties' is a pointer to array with a known maximum size, it will be ignored in the API library, but supported in the layer
+WARNING: Member 'pCopySrcLayouts' in struct 'VkPhysicalDeviceHostImageCopyProperties' is a pointer to array with a known maximum size, it will be ignored in the API library, but supported in the layer
+WARNING: Ignoring member 'pLayeredApis' in struct 'VkPhysicalDeviceLayeredApiPropertiesListKHR' containing ill-formed pointer to array
+WARNING: Member 'pCopyDstLayouts' in struct 'VkPhysicalDeviceVulkan14Properties' is a pointer to array with a known maximum size, it will be ignored in the API library, but supported in the layer
+WARNING: Member 'pCopySrcLayouts' in struct 'VkPhysicalDeviceVulkan14Properties' is a pointer to array with a known maximum size, it will be ignored in the API library, but supported in the layer
+Generating '/root/volo-repro/repos/Vulkan-Profiles/schema/profiles-0.8-latest.json'...
+WARNING: `jsonschema` module is not installed, schema validation skip
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+WARNING: `jsonschema` module is not installed, schema validation skip
+Loading profile file: 'VP_LUNARG_desktop_baseline.json'
+WARNING: `jsonschema` module is not installed, schema validation skip
+Loading profile file: 'VP_KHR_roadmap.json'
+WARNING: `jsonschema` module is not installed, schema validation skip
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_LUNARG_desktop_baseline_2022'
+Required profiles by the VP_LUNARG_desktop_baseline_2022 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2022 profile:
+- VP_LUNARG_desktop_baseline_2022::VP_LUNARG_desktop_baseline_2022_block
+Registering profile 'VP_LUNARG_desktop_baseline_2023'
+Required profiles by the VP_LUNARG_desktop_baseline_2023 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2023 profile:
+- VP_LUNARG_desktop_baseline_2023::VP_LUNARG_desktop_baseline_2023_block
+Registering profile 'VP_LUNARG_desktop_baseline_2024'
+Required profiles by the VP_LUNARG_desktop_baseline_2024 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2024 profile:
+- VP_LUNARG_desktop_baseline_2024::VP_LUNARG_desktop_baseline_2024_block
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+Loading profile file: 'VP_LUNARG_desktop_baseline.json'
+Loading profile file: 'VP_KHR_roadmap.json'
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_LUNARG_desktop_baseline_2022'
+Required profiles by the VP_LUNARG_desktop_baseline_2022 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2022 profile:
+- VP_LUNARG_desktop_baseline_2022::VP_LUNARG_desktop_baseline_2022_block
+Registering profile 'VP_LUNARG_desktop_baseline_2023'
+Required profiles by the VP_LUNARG_desktop_baseline_2023 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2023 profile:
+- VP_LUNARG_desktop_baseline_2023::VP_LUNARG_desktop_baseline_2023_block
+Registering profile 'VP_LUNARG_desktop_baseline_2024'
+Required profiles by the VP_LUNARG_desktop_baseline_2024 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2024 profile:
+- VP_LUNARG_desktop_baseline_2024::VP_LUNARG_desktop_baseline_2024_block
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/include/vulkan/vulkan_profiles.h'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/source/vulkan_profiles.cpp'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/include/vulkan/vulkan_profiles.hpp'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+Loading profile file: 'VP_LUNARG_desktop_baseline.json'
+Loading profile file: 'VP_KHR_roadmap.json'
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_LUNARG_desktop_baseline_2022'
+Required profiles by the VP_LUNARG_desktop_baseline_2022 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2022 profile:
+- VP_LUNARG_desktop_baseline_2022::VP_LUNARG_desktop_baseline_2022_block
+Registering profile 'VP_LUNARG_desktop_baseline_2023'
+Required profiles by the VP_LUNARG_desktop_baseline_2023 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2023 profile:
+- VP_LUNARG_desktop_baseline_2023::VP_LUNARG_desktop_baseline_2023_block
+Registering profile 'VP_LUNARG_desktop_baseline_2024'
+Required profiles by the VP_LUNARG_desktop_baseline_2024 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2024 profile:
+- VP_LUNARG_desktop_baseline_2024::VP_LUNARG_desktop_baseline_2024_block
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/include/vulkan/debug/vulkan_profiles.h'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/source/debug/vulkan_profiles.cpp'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/include/vulkan/debug/vulkan_profiles.hpp'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_ANDROID_vulkan_profile_2021.json'
+Registering profile 'VP_ANDROID_vulkan_profile_2021'
+Required profiles by the VP_ANDROID_vulkan_profile_2021 profile: None
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2021 profile:
+- VP_ANDROID_vulkan_profile_2021::baseline
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles_android.h'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles_android.cpp'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles_android.hpp'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_ANDROID_baseline_2021.json'
+Loading profile file: 'VP_ANDROID_baseline_2022.json'
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+Loading profile file: 'VP_LUNARG_desktop_baseline.json'
+Loading profile file: 'VP_KHR_roadmap.json'
+Registering profile 'VP_ANDROID_baseline_2021'
+Required profiles by the VP_ANDROID_baseline_2021 profile: None
+Required capabilities blocks by the VP_ANDROID_baseline_2021 profile:
+- VP_ANDROID_baseline_2021::baseline
+Registering profile 'VP_ANDROID_baseline_2022'
+Required profiles by the VP_ANDROID_baseline_2022 profile: None
+Required capabilities blocks by the VP_ANDROID_baseline_2022 profile:
+- VP_ANDROID_baseline_2022::baseline
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_LUNARG_desktop_baseline_2022'
+Required profiles by the VP_LUNARG_desktop_baseline_2022 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2022 profile:
+- VP_LUNARG_desktop_baseline_2022::VP_LUNARG_desktop_baseline_2022_block
+Registering profile 'VP_LUNARG_desktop_baseline_2023'
+Required profiles by the VP_LUNARG_desktop_baseline_2023 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2023 profile:
+- VP_LUNARG_desktop_baseline_2023::VP_LUNARG_desktop_baseline_2023_block
+Registering profile 'VP_LUNARG_desktop_baseline_2024'
+Required profiles by the VP_LUNARG_desktop_baseline_2024 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2024 profile:
+- VP_LUNARG_desktop_baseline_2024::VP_LUNARG_desktop_baseline_2024_block
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles.h'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles.cpp'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles.hpp'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_ANDROID_baseline_2021.json'
+Loading profile file: 'VP_ANDROID_baseline_2022.json'
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+Loading profile file: 'VP_LUNARG_desktop_baseline.json'
+Loading profile file: 'VP_KHR_roadmap.json'
+Registering profile 'VP_ANDROID_baseline_2021'
+Required profiles by the VP_ANDROID_baseline_2021 profile: None
+Required capabilities blocks by the VP_ANDROID_baseline_2021 profile:
+- VP_ANDROID_baseline_2021::baseline
+Registering profile 'VP_ANDROID_baseline_2022'
+Required profiles by the VP_ANDROID_baseline_2022 profile: None
+Required capabilities blocks by the VP_ANDROID_baseline_2022 profile:
+- VP_ANDROID_baseline_2022::baseline
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_LUNARG_desktop_baseline_2022'
+Required profiles by the VP_LUNARG_desktop_baseline_2022 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2022 profile:
+- VP_LUNARG_desktop_baseline_2022::VP_LUNARG_desktop_baseline_2022_block
+Registering profile 'VP_LUNARG_desktop_baseline_2023'
+Required profiles by the VP_LUNARG_desktop_baseline_2023 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2023 profile:
+- VP_LUNARG_desktop_baseline_2023::VP_LUNARG_desktop_baseline_2023_block
+Registering profile 'VP_LUNARG_desktop_baseline_2024'
+Required profiles by the VP_LUNARG_desktop_baseline_2024 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2024 profile:
+- VP_LUNARG_desktop_baseline_2024::VP_LUNARG_desktop_baseline_2024_block
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles_debug.h'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles_debug.cpp'...
+Generating '/root/volo-repro/repos/Vulkan-Profiles/library/test/generated_vulkan_profiles_debug.hpp'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+Loading profile file: 'VP_KHR_roadmap.json'
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Generating '/root/volo-repro/repos/Vulkan-Profiles/PROFILES.md'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_LUNARG_minimum_requirements.json'
+Loading profile file: 'VP_LUNARG_desktop_baseline.json'
+Loading profile file: 'VP_KHR_roadmap.json'
+Registering profile 'VP_LUNARG_minimum_requirements_1_0'
+Required profiles by the VP_LUNARG_minimum_requirements_1_0 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_0 profile:
+- VP_LUNARG_minimum_requirements_1_0::vulkan10requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_1'
+Required profiles by the VP_LUNARG_minimum_requirements_1_1 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_1 profile:
+- VP_LUNARG_minimum_requirements_1_1::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_1::vulkan11requirements_split
+Registering profile 'VP_LUNARG_minimum_requirements_1_2'
+Required profiles by the VP_LUNARG_minimum_requirements_1_2 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_2 profile:
+- VP_LUNARG_minimum_requirements_1_2::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_2::vulkan12requirements
+Registering profile 'VP_LUNARG_minimum_requirements_1_3'
+Required profiles by the VP_LUNARG_minimum_requirements_1_3 profile: None
+Required capabilities blocks by the VP_LUNARG_minimum_requirements_1_3 profile:
+- VP_LUNARG_minimum_requirements_1_3::vulkan10requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan11requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan12requirements
+- VP_LUNARG_minimum_requirements_1_3::vulkan13requirements
+Registering profile 'VP_LUNARG_desktop_baseline_2022'
+Required profiles by the VP_LUNARG_desktop_baseline_2022 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2022 profile:
+- VP_LUNARG_desktop_baseline_2022::VP_LUNARG_desktop_baseline_2022_block
+Registering profile 'VP_LUNARG_desktop_baseline_2023'
+Required profiles by the VP_LUNARG_desktop_baseline_2023 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2023 profile:
+- VP_LUNARG_desktop_baseline_2023::VP_LUNARG_desktop_baseline_2023_block
+Registering profile 'VP_LUNARG_desktop_baseline_2024'
+Required profiles by the VP_LUNARG_desktop_baseline_2024 profile: None
+Required capabilities blocks by the VP_LUNARG_desktop_baseline_2024 profile:
+- VP_LUNARG_desktop_baseline_2024::VP_LUNARG_desktop_baseline_2024_block
+Registering profile 'VP_KHR_roadmap_2026'
+Required profiles by the VP_KHR_roadmap_2026 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2026::vulkan10requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkan14requirements_roadmap2026
+- VP_KHR_roadmap_2026::vulkanextensionrequirements_roadmap2026
+Registering profile 'VP_KHR_roadmap_2024'
+Required profiles by the VP_KHR_roadmap_2024 profile:
+- VP_KHR_roadmap_2022
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+- VP_KHR_roadmap_2024::vulkan10requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan11requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkan12requirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024
+- VP_KHR_roadmap_2024::vulkanextensionrequirements_roadmap2024_only
+Registering profile 'VP_KHR_roadmap_2022'
+Required profiles by the VP_KHR_roadmap_2022 profile: None
+Required capabilities blocks by the VP_KHR_roadmap_2022 profile:
+- VP_KHR_roadmap_2022::vulkan10requirements
+- VP_KHR_roadmap_2022::vulkan10requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan11requirements
+- VP_KHR_roadmap_2022::vulkan11requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan12requirements
+- VP_KHR_roadmap_2022::vulkan12requirements_roadmap2022
+- VP_KHR_roadmap_2022::vulkan13requirements
+- VP_KHR_roadmap_2022::vulkan13requirements_roadmap2022
+Generating '/root/volo-repro/repos/Vulkan-Profiles/PROFILES_ALL.md'...
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+/root/volo-repro/repos/Vulkan-Profiles/scripts/gen_profiles_solution.py:3599: DeprecationWarning: Testing an element's truth value will always return True in future versions.  Use specific 'len(elem)' or 'elem is not None' test instead.
+  if values:
+Loading profile file: 'VP_ANDROID_15_requirements.json'
+Loading profile file: 'VP_ANDROID_16_requirements.json'
+Loading profile file: 'VP_ANDROID_17_requirements.json'
+Loading profile file: 'VP_ANDROID_vulkan_profile_2021.json'
+Loading profile file: 'VP_ANDROID_vulkan_profile_2022.json'
+Loading profile file: 'VP_ANDROID_vulkan_profile_2025.json'
+Registering profile 'VP_ANDROID_15_requirements'
+Required profiles by the VP_ANDROID_15_requirements profile:
+- VP_ANDROID_vulkan_profile_2022
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2022 profile:
+- VP_ANDROID_vulkan_profile_2022::baseline
+- VP_ANDROID_15_requirements::MUST
+- VP_ANDROID_15_requirements::primitivesGeneratedQuery
+- VP_ANDROID_15_requirements::pipelineStatisticsQuery
+- VP_ANDROID_15_requirements::swBresenhamLines
+- VP_ANDROID_15_requirements::hwBresenhamLines
+Registering profile 'VP_ANDROID_16_requirements'
+Required profiles by the VP_ANDROID_16_requirements profile:
+- VP_ANDROID_vulkan_profile_2022
+- VP_ANDROID_15_requirements
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2022 profile:
+- VP_ANDROID_vulkan_profile_2022::baseline
+- VP_ANDROID_15_requirements::MUST
+- VP_ANDROID_15_requirements::primitivesGeneratedQuery
+- VP_ANDROID_15_requirements::pipelineStatisticsQuery
+- VP_ANDROID_15_requirements::swBresenhamLines
+- VP_ANDROID_15_requirements::hwBresenhamLines
+- VP_ANDROID_16_requirements::MUST
+- VP_ANDROID_16_requirements::multisampledToSingleSampled
+- VP_ANDROID_16_requirements::shaderStencilExport
+Registering profile 'VP_ANDROID_17_requirements'
+Required profiles by the VP_ANDROID_17_requirements profile:
+- VP_ANDROID_vulkan_profile_2025
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2025 profile:
+- VP_ANDROID_vulkan_profile_2025::baseline
+- VP_ANDROID_17_requirements::MUST
+- VP_ANDROID_17_requirements::primitivesGeneratedQuery
+- VP_ANDROID_17_requirements::pipelineStatisticsQuery
+- VP_ANDROID_17_requirements::multisampledToSingleSampled
+- VP_ANDROID_17_requirements::shaderStencilExport
+Registering profile 'VP_ANDROID_vulkan_profile_2021'
+Required profiles by the VP_ANDROID_vulkan_profile_2021 profile: None
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2021 profile:
+- VP_ANDROID_vulkan_profile_2021::baseline
+Registering profile 'VP_ANDROID_vulkan_profile_2022'
+Required profiles by the VP_ANDROID_vulkan_profile_2022 profile: None
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2022 profile:
+- VP_ANDROID_vulkan_profile_2022::baseline
+Registering profile 'VP_ANDROID_vulkan_profile_2025'
+Required profiles by the VP_ANDROID_vulkan_profile_2025 profile: None
+Required capabilities blocks by the VP_ANDROID_vulkan_profile_2025 profile:
+- VP_ANDROID_vulkan_profile_2025::baseline
+Generating '/root/volo-repro/repos/Vulkan-Profiles/PROFILES_ANDROID.md'...
+[ 85%] Built target VpGenerated
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_combine_intersect/VP_LUNARG_test_combine_intersect1.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_combine_intersect/VP_LUNARG_test_combine_intersect2.json
+Building a Vulkan 1.0.142 profile
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_combine_union/VP_LUNARG_test_combine_union1.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_combine_union/VP_LUNARG_test_combine_union2.json
+Building a Vulkan 1.0.142 profile
+[ 85%] Built target VpTestUnion
+[ 85%] Built target VpTestIntersect
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_combine_intersect/VP_LUNARG_test_combine_intersect1.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_combine_intersect/VP_LUNARG_test_combine_intersect2.json
+Building a Vulkan 1.0.142 profile
+[ 85%] Built target VpTestGeneratedName
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_host_image_copy/local_gpu.json
+Opening: /root/volo-repro/repos/Vulkan-Profiles/profiles/test/data/VP_LUNARG_test_host_image_copy/remote_gpu.json
+Building a Vulkan 1.3.255 profile
+[ 85%] Built target VpTestHostImageCopy
+[100%] Linking CXX shared module libVkLayer_khronos_profiles.so
+[100%] Built target ProfilesLayer
+Loading registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/vk.xml'
+Loading video registry file: '/root/volo-repro/repos/Vulkan-Profiles/external/Release/64/Vulkan-Headers/build/install/share/vulkan/registry/video.xml'
+[100%] Built target VpLayer_generate_tests

@@ -1,0 +1,21 @@
+{
+  "timestamp_utc": "2026-09-05T16:04:01.565360+00:00",
+  "repos": {
+    "VoLoAgent": {
+      "commit": "b4e623079ca8498a16bcd5016920d71f76c44d30"
+    },
+    "RoboLab": {
+      "commit": "f72d39445ab699c9cfd9bf551e8d21b6075293b9"
+    },
+    "RoboVoLo": {
+      "commit": "69b53943ee9213720ee68dcbdea285b2c1289982"
+    },
+    "openpi": {
+      "commit": "aa6420561529593114160d05e5ad155792b272f3"
+    },
+    "Vulkan-Profiles": {
+      "commit": "a400d0b10059b2cc3cd285475593eee79975a5c4"
+    }
+  },
+  "status": "simulator_shader_compiler_blocked"
+}

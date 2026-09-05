@@ -1,0 +1,72 @@
+warning: Error disabling address space randomization: Operation not permitted
+
+This GDB supports auto-downloading debuginfo from the following URLs:
+  <https://debuginfod.ubuntu.com>
+Enable debuginfod for this session? (y or [n]) [answered N; input not from terminal]
+Debuginfod has been disabled.
+To make this setting permanent, add 'set debuginfod enabled off' to .gdbinit.
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /root/volo-repro/envs/robolab/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.rendering.kit
+Loading user config located at: '/root/volo-repro/envs/robolab/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/user.config.json'
+[Info] [carb] Logging to file: /root/volo-repro/envs/robolab/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260905_154232.log
+2026-09-05T15:42:32Z [1ms] [Warning] [carb.crashreporter-breakpad.plugin] [previous crash] preventing upload of minidump due to user opt-out: '/root/volo-repro/envs/robolab/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/5f504b36-151a-4e6b-4ac20ab2-c82e61f9.dmp'
+2026-09-05T15:42:32Z [1ms] [Warning] [carb.crashreporter-breakpad.plugin] [previous crash] preventing upload of minidump due to user opt-out: '/root/volo-repro/envs/robolab/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/d97ed660-15ac-4418-eefae5b5-263314b8.dmp'
+2026-09-05T15:42:32Z [1ms] [Warning] [carb.crashreporter-breakpad.plugin] [previous crash] preventing upload of minidump due to user opt-out: '/root/volo-repro/envs/robolab/lib/python3.11/site-packages/isaacsim/kit/data/Kit/Isaac-Sim/5.1/d396dffb-90d7-4512-753f2e83-cecf3e7e.dmp'
+[Detaching after vfork from child process 48184]
+[Detaching after fork from child process 48199]
+[Detaching after fork from child process 48201]
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 595.71.05     | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 5090          | Yes: 0 |     | 32607   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2b85      | 3df58cc9.. |
+|     |                                  |        |     |            | c1        |            |
+|=============================================================================================|
+| OS: 24.04.4 LTS (Noble Numbat) ubuntu, Version: 24.04.4, Kernel: 7.0.0-15-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101011 (1.21.1.11)
+| Processor: AMD Ryzen Threadripper 7960X 24-Cores
+| Bare Metal Cores: 24 | Bare Metal Logical Cores: 48
+| Core Usage Quota: 23.04
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 42431 | Free Memory: 31356
+| Total Page/Swap (MB): 8191 | Free Page/Swap: 1922
+|---------------------------------------------------------------------------------------------|
+[Detaching after vfork from child process 48228]
+2026-09-05T15:42:33Z [1,134ms] [Warning] [gpu.foundation.plugin] CPU performance profile is set to powersave. This profile sets the CPU to the lowest frequency reducing performance.
+2026-09-05T15:42:33Z [1,145ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+[Detaching after fork from child process 48267]
+2026-09-05T15:42:35Z [2,854ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-09-05T15:42:35Z [3,225ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-05T15:42:35Z [3,235ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-09-05T15:42:38Z [6,596ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+[Detaching after vfork from child process 48519]
+2026-09-05T15:42:39Z [6,776ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-09-05T15:42:39Z [6,776ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-09-05T15:42:39Z [6,777ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+
+Thread 29 "carb.tasking19" received signal SIGILL, Illegal instruction.
+[Switching to Thread 0x7490da1c06c0 (LWP 48162)]
+0x000074904bf16294 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+=> 0x74904bf16294:	ud2
+rsp            0x7490d1ddccc8      0x7490d1ddccc8
+rbp            0x74904bf16294      0x74904bf16294
+$1 = {si_signo = 4, si_errno = 0, si_code = 2, _sifields = {_pad = {1274110612, 29840, 0 <repeats 26 times>}, _kill = {si_pid = 1274110612, si_uid = 29840}, _timer = {si_tid = 1274110612, si_overrun = 29840, si_sigval = {sival_int = 0, sival_ptr = 0x0}}, _rt = {si_pid = 1274110612, si_uid = 29840, si_sigval = {sival_int = 0, sival_ptr = 0x0}}, _sigchld = {si_pid = 1274110612, si_uid = 29840, si_status = 0, si_utime = 0, si_stime = 0}, _sigfault = {si_addr = 0x74904bf16294, _addr_lsb = 0, _addr_bnd = {_lower = 0x0, _upper = 0x0}}, _sigpoll = {si_band = 128163098223252, si_fd = 0}, _sigsys = {_call_addr = 0x74904bf16294, _syscall = 0, _arch = 0}}}
+#0  0x000074904bf16294 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#1  0x000074904d1972f6 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#2  0x000074904d19749b in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#3  0x000074904fbaeb12 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#4  0x000074904fbb00d1 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#5  0x000074904fb4f2df in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#6  0x000074904c6a8e8a in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#7  0x000074904ce3a48f in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#8  0x000074904f9e2d6a in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#9  0x000074904ce39ef1 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#10 0x000074904fd62c3c in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05
+#11 0x000074904fd634d6 in ?? () from /lib/x86_64-linux-gnu/libnvidia-gpucomp.so.595.71.05

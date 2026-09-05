@@ -1,0 +1,30 @@
+.......................................................................  [100%]
+=============================== warnings summary ===============================
+tests/test_subgoal.py:52
+  /root/volo-repro/repos/VoLoAgent/tests/test_subgoal.py:52: PytestCollectionWarning: cannot collect test class 'TestableSubgoalStrategy' because it has a __init__ constructor (from: tests/test_subgoal.py)
+    class TestableSubgoalStrategy(SubgoalStrategy):
+
+../../envs/vlm-orch/lib/python3.11/site-packages/websockets/sync/server.py:460
+  /root/volo-repro/envs/vlm-orch/lib/python3.11/site-packages/websockets/sync/server.py:460: DeprecationWarning: WebSocketServer was renamed to Server
+    warnings.warn(  # deprecated in 13.0 - 2024-08-20
+
+tests/test_proxy.py::test_passthrough
+  /root/volo-repro/repos/VoLoAgent/tests/test_proxy.py:85: DeprecationWarning: connect() must be used as a context manager: with connect(...) as websocket: ...; alternatively, use websocket = connect(..., legacy=True) to connect directly
+    metadata = codec.unpackb(client.recv())
+
+tests/test_proxy.py::test_passthrough
+tests/test_proxy.py::test_rewrite
+tests/test_proxy.py::test_cosmos3_passthrough_strips_orchestrator_only_keys
+  /root/volo-repro/envs/vlm-orch/lib/python3.11/concurrent/futures/thread.py:58: DeprecationWarning: connect() must be used as a context manager: with connect(...) as websocket: ...; alternatively, use websocket = connect(..., legacy=True) to connect directly
+    result = self.fn(*self.args, **self.kwargs)
+
+tests/test_proxy.py::test_rewrite
+  /root/volo-repro/repos/VoLoAgent/tests/test_proxy.py:130: DeprecationWarning: connect() must be used as a context manager: with connect(...) as websocket: ...; alternatively, use websocket = connect(..., legacy=True) to connect directly
+    metadata = codec.unpackb(client.recv())
+
+tests/test_proxy.py::test_cosmos3_passthrough_strips_orchestrator_only_keys
+  /root/volo-repro/repos/VoLoAgent/tests/test_proxy.py:192: DeprecationWarning: connect() must be used as a context manager: with connect(...) as websocket: ...; alternatively, use websocket = connect(..., legacy=True) to connect directly
+    codec.unpackb(client.recv())  # metadata
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+71 passed, 8 warnings in 2.90s

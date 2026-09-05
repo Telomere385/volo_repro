@@ -1,0 +1,33 @@
+diff --git a/vlm_orchestrator/proxy.py b/vlm_orchestrator/proxy.py
+index 933f137..3b7a218 100644
+--- a/vlm_orchestrator/proxy.py
++++ b/vlm_orchestrator/proxy.py
+@@ -956,6 +956,9 @@ class OrchestratorProxy:
+                     )
+                     del state._last_failure_event
+ 
++                from vlm_orchestrator.repro_fault import apply_hold_fault
++                apply_hold_fault(obs, response, state, is_new_episode)
++
+                 # ---- Trajectory collection (for fine-tuning data) ----
+                 self._record_trajectory_step(
+                     obs, response, state, is_new_episode,
+diff --git a/vlm_orchestrator/strategies/subgoal_base.py b/vlm_orchestrator/strategies/subgoal_base.py
+index a8cc8b4..32738d2 100644
+--- a/vlm_orchestrator/strategies/subgoal_base.py
++++ b/vlm_orchestrator/strategies/subgoal_base.py
+@@ -1213,6 +1213,14 @@ class SubgoalBaseStrategy(OrchestrationStrategy):
+                         "  ↻ Replan failed — no image available"
+                     )
+                 elif self._recycle(obs, state, image):
++                    state._repro_replan_applied_step = int(state.episode_step)
++                    state.log({
++                        "type": "repro_replan_applied",
++                        "step": int(state.episode_step),
++                        "reason": result.reason,
++                        "subgoals": list(state.subgoals),
++                        "flush_actions": bool(state.flush_actions),
++                    })
+                     logger.info(
+                         f"  ↻ Replanned → {len(state.subgoals)} "
+                         f"subgoal(s), starting with "

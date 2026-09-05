@@ -1,0 +1,17 @@
+{
+  "file_format_version": "1.2.1",
+  "layer": {
+    "name": "VK_LAYER_KHRONOS_profiles",
+    "type": "GLOBAL",
+    "library_path": "/root/volo-repro/repos/Vulkan-Profiles/build/layer/libVkLayer_khronos_profiles.so",
+    "api_version": "1.4.341",
+    "implementation_version": "1",
+    "description": "Khronos Profiles: per-process Isaac Sim compatibility",
+    "enable_environment": {
+      "VOLO_VULKAN_COMPAT": "1"
+    },
+    "disable_environment": {
+      "VOLO_VULKAN_COMPAT_DISABLE": "1"
+    }
+  }
+}

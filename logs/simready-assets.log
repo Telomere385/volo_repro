@@ -1,0 +1,126 @@
+External materials notice:
+  This tool retrieves NVIDIA Isaac SimReady 6.0 materials.
+  Those materials are not distributed with RoboVoLo.
+  Source: https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/SimReady/
+  Retained terms:
+    - /root/volo-repro/repos/RoboVoLo/LICENSES/LicenseRef-NVIDIA-SOFTWARE-LICENSE-AGREEMENT.txt
+    - /root/volo-repro/repos/RoboVoLo/LICENSES/LicenseRef-NVIDIA-AI-PRODUCT-TERMS.txt
+  Official source: https://docs.omniverse.nvidia.com/ov/latest/common/NVIDIA_Omniverse_License_Agreement.html
+  The 34 requested asset families are:
+    - mini_plastic_basket
+    - plastic_basket
+    - open_cardboard_box
+    - open_cardboard_box_002
+    - open_cardboard_box_004
+    - bowl_002
+    - bowl_003
+    - bowl_005
+    - bowl_011
+    - bowl_015
+    - bowl_016
+    - bowl_019
+    - large_plastic_plate
+    - avocado
+    - banana_2
+    - beer_bottle_003
+    - bitter_melon
+    - coffee_cup_e01
+    - eggplant
+    - lime
+    - orange
+    - soda_can_008
+    - cup_d01
+    - cutting_board_b01
+    - beige_office_compost_can
+    - black_office_trash_can
+    - green_crate
+    - green_crate_002
+    - green_recycle_container_004
+    - red_crate
+    - white_crate
+    - white_crate_002
+    - golf_ball_002
+    - ping_pong_paddle
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SimReady Asset Downloader + Patcher
+  Source: NVIDIA Isaac SimReady 6.0
+  Dest:   /root/volo-repro/repos/RoboLab/assets/objects/simready
+  Assets: 34
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 1: Downloading from S3
+
+  Fetching workspace_cache.json from S3...
+  Workspace index loaded: 1508 unambiguous entries
+
+  [1/34] mini_plastic_basket <- Residential/Kitchen/Baskets/Plastic_Mini_Basket_A01
+    20 files (20 new, 0 cached, 0 errors)
+  [2/34] plastic_basket <- Residential/Kitchen/Baskets/Plastic_Basket_A01
+    20 files (20 new, 0 cached, 0 errors)
+  [3/34] open_cardboard_box <- Industrial/Warehouse/Boxes/Cardboard_Open_Box_A06
+    26 files (26 new, 0 cached, 0 errors)
+  [4/34] open_cardboard_box_002 <- Industrial/Warehouse/Boxes/Cardboard_Open_Box_A05
+    26 files (26 new, 0 cached, 0 errors)
+  [5/34] open_cardboard_box_004 <- Industrial/Warehouse/Boxes/Cardboard_Open_Box_A03
+    32 files (32 new, 0 cached, 0 errors)
+  [6/34] bowl_002 <- Residential/Kitchen/Dishware/Bowl_S01
+    19 files (19 new, 0 cached, 0 errors)
+  [7/34] bowl_003 <- Residential/Kitchen/Dishware/Bowl_R01
+    20 files (20 new, 0 cached, 0 errors)
+  [8/34] bowl_005 <- Residential/Kitchen/Dishware/Bowl_P01
+    19 files (19 new, 0 cached, 0 errors)
+  [9/34] bowl_011 <- Residential/Kitchen/Dishware/Bowl_J01
+    19 files (19 new, 0 cached, 0 errors)
+  [10/34] bowl_015 <- Residential/Kitchen/Dishware/Bowl_F01
+    19 files (19 new, 0 cached, 0 errors)
+  [11/34] bowl_016 <- Residential/Kitchen/Dishware/Kitchenware_Bowl_E01
+    19 files (19 new, 0 cached, 0 errors)
+  [12/34] bowl_019 <- Residential/Kitchen/Dishware/Kitchenware_Bowl_B01
+    19 files (19 new, 0 cached, 0 errors)
+  [13/34] large_plastic_plate <- Residential/Kitchen/Dishware/Big_Plastic_Plate_A01
+    18 files (18 new, 0 cached, 0 errors)
+  [14/34] ✗ avocado (not in workspace index: objaverse_food_produce_avocado_v01_00)
+  [15/34] banana_2 <- Residential/Kitchen/Food/Fruit/Banana_A01
+    19 files (19 new, 0 cached, 0 errors)
+  [16/34] beer_bottle_003 <- Residential/Kitchen/Food/Beverages/Beer_Bottle_O01
+    19 files (19 new, 0 cached, 0 errors)
+  [17/34] bitter_melon <- Residential/Kitchen/Food/Fruit/Bitter_Melon_A01
+    20 files (20 new, 0 cached, 0 errors)
+  [18/34] coffee_cup_e01 <- Residential/Kitchen/Dishware/Coffee_Cup_E01
+    19 files (19 new, 0 cached, 0 errors)
+  [19/34] eggplant <- Residential/Kitchen/Food/Vegetables/Eggplant_A01
+    26 files (26 new, 0 cached, 0 errors)
+  [20/34] lime <- Residential/Kitchen/Food/Fruit/Lime_A01
+    20 files (20 new, 0 cached, 0 errors)
+  [21/34] orange <- Residential/Kitchen/Food/Fruit/Orange_A01_02
+    20 files (20 new, 0 cached, 0 errors)
+  [22/34] soda_can_008 <- Residential/Kitchen/Food/Canned_Goods/Can_G01
+    19 files (19 new, 0 cached, 0 errors)
+  [23/34] cup_d01 <- Residential/Kitchen/Dishware/Cup_D01
+    20 files (20 new, 0 cached, 0 errors)
+  [24/34] cutting_board_b01 <- Residential/Kitchen/Cutting_Boards/Cutting_Board_B01
+    20 files (20 new, 0 cached, 0 errors)
+  [25/34] beige_office_compost_can <- Industrial/Warehouse/Containers/Trash_Can_A03_4
+    20 files (20 new, 0 cached, 0 errors)
+  [26/34] black_office_trash_can <- Industrial/Warehouse/Containers/Trash_Can_A03_3
+    20 files (20 new, 0 cached, 0 errors)
+  [27/34] green_crate <- Industrial/Warehouse/Containers/Green_Crate_A20_01
+    20 files (20 new, 0 cached, 0 errors)
+  [28/34] green_crate_002 <- Industrial/Warehouse/Containers/Green_Crate_A02_01
+    20 files (20 new, 0 cached, 0 errors)
+  [29/34] green_recycle_container_004 <- Industrial/Warehouse/Containers/Recycle_Green_Container_A03
+    22 files (22 new, 0 cached, 0 errors)
+  [30/34] red_crate <- Industrial/Warehouse/Containers/Red_Crate_A19_01
+    20 files (20 new, 0 cached, 0 errors)
+  [31/34] white_crate <- Industrial/Warehouse/Containers/White_Crate_A20_01
+    20 files (20 new, 0 cached, 0 errors)
+  [32/34] white_crate_002 <- Industrial/Warehouse/Containers/White_Crate_A14_01
+    20 files (20 new, 0 cached, 0 errors)
+  [33/34] golf_ball_002 <- Residential/Recreation/Golf_Ball_A02
+    20 files (20 new, 0 cached, 0 errors)
+  [34/34] ping_pong_paddle <- Residential/Recreation/Pong_Paddle_Bat_A01
+    20 files (20 new, 0 cached, 0 errors)
+
+Download complete. Errors: 1
+ERROR: One or more required assets could not be downloaded.

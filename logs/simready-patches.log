@@ -1,0 +1,97 @@
+External materials notice:
+  This tool retrieves NVIDIA Isaac SimReady 6.0 materials.
+  Those materials are not distributed with RoboVoLo.
+  Source: https://omniverse-content-production.s3-us-west-2.amazonaws.com/Assets/Isaac/6.0/Isaac/SimReady/
+  Retained terms:
+    - /root/volo-repro/repos/RoboVoLo/LICENSES/LicenseRef-NVIDIA-SOFTWARE-LICENSE-AGREEMENT.txt
+    - /root/volo-repro/repos/RoboVoLo/LICENSES/LicenseRef-NVIDIA-AI-PRODUCT-TERMS.txt
+  Official source: https://docs.omniverse.nvidia.com/ov/latest/common/NVIDIA_Omniverse_License_Agreement.html
+  The 34 requested asset families are:
+    - mini_plastic_basket
+    - plastic_basket
+    - open_cardboard_box
+    - open_cardboard_box_002
+    - open_cardboard_box_004
+    - bowl_002
+    - bowl_003
+    - bowl_005
+    - bowl_011
+    - bowl_015
+    - bowl_016
+    - bowl_019
+    - large_plastic_plate
+    - avocado
+    - banana_2
+    - beer_bottle_003
+    - bitter_melon
+    - coffee_cup_e01
+    - eggplant
+    - lime
+    - orange
+    - soda_can_008
+    - cup_d01
+    - cutting_board_b01
+    - beige_office_compost_can
+    - black_office_trash_can
+    - green_crate
+    - green_crate_002
+    - green_recycle_container_004
+    - red_crate
+    - white_crate
+    - white_crate_002
+    - golf_ball_002
+    - ping_pong_paddle
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  SimReady Asset Downloader + Patcher
+  Source: NVIDIA Isaac SimReady 6.0
+  Dest:   /root/volo-repro/repos/RoboLab/assets/objects/simready
+  Assets: 34
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+PHASE 2: Writing wrapper USDs + fixing texture paths
+  Done.
+
+PHASE 3: Patching physics (disabling nested rigid bodies)
+  ✓ banana_2
+  ✓ beer_bottle_003
+  ✓ bitter_melon
+  ✓ coffee_cup_e01
+  ✓ eggplant
+  ✓ golf_ball_002
+  ✓ large_plastic_plate
+  ✓ lime
+  ✓ orange
+  ✓ soda_can_008
+  ✓ beige_office_compost_can
+  ✓ black_office_trash_can
+  ✓ green_recycle_container_004
+  ✓ red_crate
+  ✓ plastic_basket
+  ✓ open_cardboard_box
+  ✓ open_cardboard_box_002
+  ✓ open_cardboard_box_004
+  ✓ bowl_002
+  ✓ bowl_003
+  ✓ bowl_005
+  ✓ bowl_011
+  ✓ bowl_015
+  ✓ bowl_016
+  ✓ bowl_019
+  ✓ cup_d01
+  ✓ cutting_board_b01
+  ✓ green_crate
+  ✓ green_crate_002
+  ✓ white_crate
+  ✓ white_crate_002
+  ✓ ping_pong_paddle
+
+PHASE 4: Patching materials for eval rendering
+  ✓ soda_can_008
+  ✓ beer_bottle_003
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  COMPLETE: 33/34 assets ready
+  Location: /root/volo-repro/repos/RoboLab/assets/objects/simready
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ERROR: Asset set is incomplete.

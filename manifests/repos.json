@@ -1,0 +1,22 @@
+{
+  "VoLoAgent": {
+    "commit": "b4e623079ca8498a16bcd5016920d71f76c44d30",
+    "url": "https://github.com/NVlabs/VoLoAgent.git"
+  },
+  "RoboLab": {
+    "commit": "f72d39445ab699c9cfd9bf551e8d21b6075293b9",
+    "url": "https://github.com/NVlabs/RoboLab.git"
+  },
+  "RoboVoLo": {
+    "commit": "69b53943ee9213720ee68dcbdea285b2c1289982",
+    "url": "https://github.com/NVlabs/RoboVoLo.git"
+  },
+  "openpi": {
+    "commit": "aa6420561529593114160d05e5ad155792b272f3",
+    "url": "https://github.com/xuningy/openpi.git"
+  },
+  "Vulkan-Profiles": {
+    "commit": "a400d0b10059b2cc3cd285475593eee79975a5c4",
+    "url": "https://github.com/KhronosGroup/Vulkan-Profiles.git"
+  }
+}

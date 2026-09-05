@@ -1,0 +1,11 @@
+config.env
+active.env
+.env
+*.key
+*.pem
+envs/
+cache/
+repos/
+__pycache__/
+*.so
+*.tar.gz

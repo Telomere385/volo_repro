@@ -1,0 +1,21 @@
+diff --git a/scripts/serve_policy.py b/scripts/serve_policy.py
+index 4a42876..df18dce 100644
+--- a/scripts/serve_policy.py
++++ b/scripts/serve_policy.py
+@@ -49,6 +49,7 @@ class Args:
+ 
+     # Port to serve the policy on.
+     port: int = 8000
++    host: str = "0.0.0.0"
+     # Record the policy's behavior for debugging.
+     record: bool = False
+ 
+@@ -115,7 +116,7 @@ def main(args: Args) -> None:
+ 
+     server = websocket_policy_server.WebsocketPolicyServer(
+         policy=policy,
+-        host="0.0.0.0",
++        host=args.host,
+         port=args.port,
+         metadata=policy_metadata,
+     )

@@ -1,0 +1,17 @@
+diff --git a/.gitignore b/.gitignore
+index 5638472..9cd42d4 100644
+--- a/.gitignore
++++ b/.gitignore
+@@ -44,3 +44,12 @@ pyrightconfig.json
+ .claude/scheduled_tasks.lock
+ .claude/agents
+ .claude/commands
++
++# content-pack:robovolo
++content_packs.json
++assets/objects/art_shapes/
++assets/objects/chemistry_cubes/
++assets/objects/math_wood_cubes/
++assets/scenes/robovolo/
++robolab/tasks/robovolo/
++# /content-pack:robovolo
