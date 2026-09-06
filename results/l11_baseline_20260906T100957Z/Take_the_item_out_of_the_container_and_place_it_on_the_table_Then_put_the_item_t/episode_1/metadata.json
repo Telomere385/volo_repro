@@ -1,0 +1,7 @@
+{
+  "episode_id": 1,
+  "original_instruction": "Take the item out of the container and place it on the table. Then put the item that was on the table into the container.",
+  "start_timestamp": 1788689437.757501,
+  "end_timestamp": 1788689585.6413867,
+  "infer_count": 60
+}

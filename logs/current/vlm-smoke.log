@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/workspace/volo_repro/scripts/check_vlm.py", line 11, in <module>
+    result=client.chat.completions.create(model=os.environ["VLM_MODEL"],max_tokens=256,temperature=0,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/envs/vlm-orch/lib/python3.11/site-packages/openai/_utils/_utils.py", line 298, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/envs/vlm-orch/lib/python3.11/site-packages/openai/resources/chat/completions/completions.py", line 1296, in create
+    return self._post(
+           ^^^^^^^^^^^
+  File "/workspace/envs/vlm-orch/lib/python3.11/site-packages/openai/_base_client.py", line 1368, in post
+    return cast(ResponseT, self.request(cast_to, opts, stream=stream, stream_cls=stream_cls))
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/workspace/envs/vlm-orch/lib/python3.11/site-packages/openai/_base_client.py", line 1141, in request
+    raise self._make_status_error_from_response(err.response) from None
+openai.AuthenticationError: Error code: 401 - {'error': {'message': 'Invalid API-key provided. For details, see: https://www.alibabacloud.com/help/en/model-studio/error-code#apikey-error', 'id': '9066900f-5bc1-9aa3-8f61-1acc677ce6c7', 'type': 'invalid_request_error', 'code': 'invalid_api_key'}}

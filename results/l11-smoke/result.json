@@ -1,0 +1,47 @@
+{
+  "task": "SwapBinReplaceFruitsTask",
+  "env": "SwapBinReplaceFruitsTask",
+  "seed": 0,
+  "steps": 8,
+  "action_dim": 8,
+  "cameras": {
+    "egocentric_mirrored_camera": {
+      "shape": [
+        480,
+        864,
+        3
+      ],
+      "std": 50.13130320261244,
+      "output_keys": [
+        "rgba",
+        "rgb",
+        "depth"
+      ]
+    },
+    "over_shoulder_left_camera": {
+      "shape": [
+        720,
+        1280,
+        3
+      ],
+      "std": 68.89565037276492,
+      "output_keys": [
+        "rgba",
+        "rgb",
+        "depth"
+      ]
+    },
+    "wrist_cam": {
+      "shape": [
+        720,
+        1280,
+        3
+      ],
+      "std": 58.80055187726175,
+      "output_keys": [
+        "rgba",
+        "rgb"
+      ]
+    }
+  }
+}

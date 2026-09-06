@@ -1,0 +1,6 @@
+volo_pi05: ERROR (already started)
+volo_orch: ERROR (not running)
+volo_orch: started
+METADATA {'orchestrator': True}
+Run finished: l11_baseline_20260906T100957Z
+RoboLab results: /workspace/RoboLab/output/l11_baseline_20260906T100957Z

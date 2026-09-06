@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-export VOLO_ROOT=/root/volo-repro
+export VOLO_ROOT=/workspace/volo_repro
 export OPENPI_DATA_HOME="$VOLO_ROOT/cache/openpi"
 export HF_HOME="$VOLO_ROOT/cache/huggingface"
 export OMNI_KIT_ACCEPT_EULA=Y

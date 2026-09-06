@@ -1,0 +1,7 @@
+Installing assets/objects/art_shapes -> /workspace/RoboLab/assets/objects/art_shapes
+Installing assets/objects/chemistry_cubes -> /workspace/RoboLab/assets/objects/chemistry_cubes
+Installing assets/objects/math_wood_cubes -> /workspace/RoboLab/assets/objects/math_wood_cubes
+Installing scenes -> /workspace/RoboLab/assets/scenes/robovolo
+Installing tasks -> /workspace/RoboLab/robolab/tasks/robovolo
+
+Installed RoboVoLo: 126 tasks, 123 scenes, and 3 custom asset families.

@@ -1,0 +1,13 @@
+Using Python 3.11.15 environment at: /workspace/envs/robolab
+warning: The `tool.uv.dev-dependencies` field (used in `/workspace/openpi/packages/openpi-client/pyproject.toml`) is deprecated and will be removed in a future release; use `dependency-groups.dev` instead
+Resolved 13 packages in 1.02s
+   Building tree==0.2.4
+   Building openpi-client @ file:///workspace/openpi/packages/openpi-client
+      Built tree==0.2.4
+      Built openpi-client @ file:///workspace/openpi/packages/openpi-client
+Prepared 4 packages in 384ms
+Installed 4 packages in 10ms
+ + dm-tree==0.1.10
+ + openpi-client==0.1.0 (from file:///workspace/openpi/packages/openpi-client)
+ + svgwrite==1.4.3
+ + tree==0.2.4

@@ -1,0 +1,351 @@
+[INFO][AppLauncher]: Using device: cuda:0
+[INFO][AppLauncher]: Loading experience file: /workspace/envs/robolab/lib/python3.11/site-packages/isaaclab/apps/isaaclab.python.headless.rendering.kit
+[Info] [carb] Logging to file: /workspace/envs/robolab/lib/python3.11/site-packages/isaacsim/kit/logs/Kit/Isaac-Sim/5.1/kit_20260906_100445.log
+
+|---------------------------------------------------------------------------------------------|
+| Driver Version: 580.173.02    | Graphics API: Vulkan
+|=============================================================================================|
+| GPU | Name                             | Active | LDA | GPU Memory | Vendor-ID | LUID       |
+|     |                                  |        |     |            | Device-ID | UUID       |
+|     |                                  |        |     |            | Bus-ID    |            |
+|---------------------------------------------------------------------------------------------|
+| 0   | NVIDIA GeForce RTX 4090          | Yes: 0 |     | 24564   MB | 10de      | 0          |
+|     |                                  |        |     |            | 2684      | afb84302.. |
+|     |                                  |        |     |            | 41        |            |
+|=============================================================================================|
+| OS: 24.04.4 LTS (Noble Numbat) ubuntu, Version: 24.04.4, Kernel: 6.8.0-136-generic
+| XServer Vendor: The X.Org Foundation, XServer Version: 12101011 (1.21.1.11)
+| Processor: AMD Ryzen Threadripper PRO 5975WX 32-Cores
+| Bare Metal Cores: 32 | Bare Metal Logical Cores: 64
+| Core Usage Quota: 15.36
+|---------------------------------------------------------------------------------------------|
+| Total Memory (MB): 123625 | Free Memory: 105442
+| Total Page/Swap (MB): 528383 | Free Page/Swap: 528067
+|---------------------------------------------------------------------------------------------|
+2026-09-06T10:04:46Z [1,139ms] [Warning] [gpu.foundation.plugin] PCIe link generation current (1) and maximum (4) for device 0 don't match.
+2026-09-06T10:04:46Z [1,139ms] [Warning] [gpu.foundation.plugin] IOMMU is enabled.
+2026-09-06T10:04:47Z [2,569ms] [Warning] [omni.log] Source: omni.hydra was already registered.
+2026-09-06T10:04:48Z [3,431ms] [Warning] [carb] Acquiring non optional plugin interface which is not listed as dependency: [omni::physx::IPhysxBenchmarks v1.0] (plugin: <default plugin>), by client: omni.physics.physx.plugin. Add it to CARB_PLUGIN_IMPL_DEPS() macro of a client.
+2026-09-06T10:04:48Z [3,465ms] [Warning] [omni.isaac.dynamic_control] omni.isaac.dynamic_control is deprecated as of Isaac Sim 4.5. No action is needed from end-users.
+2026-09-06T10:04:54Z [8,653ms] [Warning] [pxr.Semantics] pxr.Semantics is deprecated - please use Semantics instead
+2026-09-06T10:04:54Z [8,881ms] [Warning] [omni.graph.core.plugin] Found duplicate of category 'Replicator' - was 'Annotators', adding 'Fabric Reader'
+2026-09-06T10:04:54Z [8,881ms] [Warning] [omni.graph.core.plugin] Category 'Replicator' not accepted on node type 'omni.replicator.core.FabricReader' in extension 'omni.replicator.core'
+2026-09-06T10:04:54Z [8,881ms] [Warning] [omni.replicator.core.scripts.extension] No material configuration file, adding configuration to material settings directly.
+2026-09-06T10:05:29Z [43,697ms] [Warning] [omni.fabric.plugin] Warning: attribute viewportHandle not found for bucket id 7
+
+[96m[RoboLab] Registering 1 task(s): ['SwapBinReplaceFruitsTask'][0m
+2026-09-06T10:06:04Z [79,320ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/franka_table/visuals>: Unresolved reference prim path @/workspace/RoboLab/assets/scenes/ladle_pot.usda@</Flattened_Prototype_1> introduced by @/workspace/RoboLab/assets/scenes/ladle_pot.usda@</world/franka_table/visuals> (instantiating stage on stage @/workspace/RoboLab/assets/scenes/ladle_pot.usda@ <0x579c88666520>)
+
+2026-09-06T10:06:04Z [79,320ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/franka_table/collisions>: Unresolved reference prim path @/workspace/RoboLab/assets/scenes/ladle_pot.usda@</Flattened_Prototype_2> introduced by @/workspace/RoboLab/assets/scenes/ladle_pot.usda@</world/franka_table/collisions> (instantiating stage on stage @/workspace/RoboLab/assets/scenes/ladle_pot.usda@ <0x579c88666520>)
+
+2026-09-06T10:06:06Z [81,304ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/ping_pong_paddle>: Could not open asset @/workspace/RoboLab/assets/objects/simready/toys_recreation/ping_pong_paddle/ping_pong_paddle.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_art_stickfigure_clutter.usda@</world/ping_pong_paddle>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_art_stickfigure_clutter.usda@ <0x579c95afea50>)
+
+2026-09-06T10:06:06Z [81,442ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/basket>: Could not open asset @/workspace/RoboLab/assets/objects/simready/baskets/plastic_basket/plastic_basket.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_co2.usda@</world/basket>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_co2.usda@ <0x579c95ab0a70>)
+
+2026-09-06T10:06:06Z [81,555ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_005/bowl_005.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_lightest.usda@</world/bowl>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_lightest.usda@ <0x579c95ab6e10>)
+
+2026-09-06T10:06:07Z [81,678ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl_002>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_002/bowl_002.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_salt.usda@</world/bowl_002>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_salt.usda@ <0x579c95abe1e0>)
+
+2026-09-06T10:06:07Z [81,743ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bin_right>: Could not open asset @/workspace/RoboLab/assets/objects/simready/baskets/plastic_basket/plastic_basket.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_sort_noble_metal.usda@</world/bin_right>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_sort_noble_metal.usda@ <0x579c95ac1810>)
+
+2026-09-06T10:06:07Z [81,743ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bin_left>: Could not open asset @/workspace/RoboLab/assets/objects/simready/baskets/plastic_basket/plastic_basket.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_sort_noble_metal.usda@</world/bin_left>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_sort_noble_metal.usda@ <0x579c95ac1810>)
+
+2026-09-06T10:06:07Z [81,796ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_011/bowl_011.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_water.usda@</world/bowl>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_chem_water.usda@ <0x579c95ac1dc0>)
+
+2026-09-06T10:06:07Z [81,942ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/red_crate_1>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/red_crate/red_crate.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/lh_kit_shelf_restock.usda@</world/red_crate_1>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/lh_kit_shelf_restock.usda@ <0x579c95b29d10>)
+
+2026-09-06T10:06:07Z [81,942ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/red_crate>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/red_crate/red_crate.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/lh_kit_shelf_restock.usda@</world/red_crate>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/lh_kit_shelf_restock.usda@ <0x579c95b29d10>)
+
+2026-09-06T10:06:07Z [82,237ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bin_a04>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_crate_002/green_crate_002.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/lh_sort_fridge_vs_pantry.usda@</world/bin_a04>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/lh_sort_fridge_vs_pantry.usda@ <0x579c95ba9b60>)
+
+2026-09-06T10:06:07Z [82,237ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/crate>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_crate_002/green_crate_002.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/lh_sort_fridge_vs_pantry.usda@</world/crate>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/lh_sort_fridge_vs_pantry.usda@ <0x579c95ba9b60>)
+
+2026-09-06T10:06:07Z [82,363ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/coffee_cup_e01>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/coffee_cup_e01/coffee_cup_e01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_balance_equation.usda@</world/coffee_cup_e01>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_balance_equation.usda@ <0x579c95bd1070>)
+
+2026-09-06T10:06:07Z [82,407ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/golf_ball_002>: Could not open asset @/workspace/RoboLab/assets/objects/simready/toys_recreation/golf_ball_002/golf_ball_002.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_missing_operand.usda@</world/golf_ball_002>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_missing_operand.usda@ <0x579c95bd67d0>)
+
+2026-09-06T10:06:07Z [82,407ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/ping_pong_paddle>: Could not open asset @/workspace/RoboLab/assets/objects/simready/toys_recreation/ping_pong_paddle/ping_pong_paddle.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_missing_operand.usda@</world/ping_pong_paddle>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_missing_operand.usda@ <0x579c95bd67d0>)
+
+2026-09-06T10:06:07Z [82,503ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/cup_d01_2>: Could not open asset @/workspace/RoboLab/assets/objects/simready/kitchenware/cup_d01/cup_d01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@</world/cup_d01_2>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@ <0x579c95be5490>)
+
+2026-09-06T10:06:07Z [82,503ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl_015>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_015/bowl_015.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@</world/bowl_015>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@ <0x579c95be5490>)
+
+2026-09-06T10:06:07Z [82,504ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/cup_d01_3>: Could not open asset @/workspace/RoboLab/assets/objects/simready/kitchenware/cup_d01/cup_d01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@</world/cup_d01_3>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@ <0x579c95be5490>)
+
+2026-09-06T10:06:07Z [82,504ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/cup_d01_1>: Could not open asset @/workspace/RoboLab/assets/objects/simready/kitchenware/cup_d01/cup_d01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@</world/cup_d01_1>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@ <0x579c95be5490>)
+
+2026-09-06T10:06:07Z [82,504ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/cup_d01>: Could not open asset @/workspace/RoboLab/assets/objects/simready/kitchenware/cup_d01/cup_d01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@</world/cup_d01>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_math_sum_to_bowl.usda@ <0x579c95be5490>)
+
+2026-09-06T10:06:07Z [82,513ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@</world/banana>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@ <0x579c95beba30>)
+
+2026-09-06T10:06:07Z [82,513ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@ <0x579c95beba30>)
+
+2026-09-06T10:06:07Z [82,513ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@ <0x579c95beba30>)
+
+2026-09-06T10:06:07Z [82,513ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_banana.usda@ <0x579c95beba30>)
+
+2026-09-06T10:06:07Z [82,521ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/soda_can>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/soda_can_008/soda_can_008.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@</world/soda_can>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@ <0x579c95beedc0>)
+
+2026-09-06T10:06:07Z [82,521ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@ <0x579c95beedc0>)
+
+2026-09-06T10:06:07Z [82,521ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@ <0x579c95beedc0>)
+
+2026-09-06T10:06:07Z [82,521ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_can.usda@ <0x579c95beedc0>)
+
+2026-09-06T10:06:07Z [82,529ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/coffee_cup>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/coffee_cup_e01/coffee_cup_e01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@</world/coffee_cup>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@ <0x579c95bef350>)
+
+2026-09-06T10:06:07Z [82,529ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@ <0x579c95bef350>)
+
+2026-09-06T10:06:07Z [82,529ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@ <0x579c95bef350>)
+
+2026-09-06T10:06:07Z [82,529ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup.usda@ <0x579c95bef350>)
+
+2026-09-06T10:06:07Z [82,536ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/soda_can>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/soda_can_008/soda_can_008.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@</world/soda_can>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@ <0x579c95bf2aa0>)
+
+2026-09-06T10:06:07Z [82,536ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@</world/banana>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@ <0x579c95bf2aa0>)
+
+2026-09-06T10:06:07Z [82,536ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/coffee_cup>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/coffee_cup_e01/coffee_cup_e01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@</world/coffee_cup>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@ <0x579c95bf2aa0>)
+
+2026-09-06T10:06:07Z [82,536ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@ <0x579c95bf2aa0>)
+
+2026-09-06T10:06:07Z [82,536ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@ <0x579c95bf2aa0>)
+
+2026-09-06T10:06:07Z [82,536ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_cup_clutter.usda@ <0x579c95bf2aa0>)
+
+2026-09-06T10:06:07Z [82,544ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@</world/banana>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@ <0x579c95bf8780>)
+
+2026-09-06T10:06:07Z [82,544ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@ <0x579c95bf8780>)
+
+2026-09-06T10:06:07Z [82,545ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@ <0x579c95bf8780>)
+
+2026-09-06T10:06:07Z [82,545ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/soda_can>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/soda_can_008/soda_can_008.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@</world/soda_can>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@ <0x579c95bf8780>)
+
+2026-09-06T10:06:07Z [82,545ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_2.usda@ <0x579c95bf8780>)
+
+2026-09-06T10:06:07Z [82,553ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/soda_can>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/soda_can_008/soda_can_008.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@</world/soda_can>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@ <0x579c95bf8d50>)
+
+2026-09-06T10:06:07Z [82,553ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/coffee_cup>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/coffee_cup_e01/coffee_cup_e01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@</world/coffee_cup>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@ <0x579c95bf8d50>)
+
+2026-09-06T10:06:07Z [82,553ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@ <0x579c95bf8d50>)
+
+2026-09-06T10:06:07Z [82,553ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@</world/banana>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@ <0x579c95bf8d50>)
+
+2026-09-06T10:06:07Z [82,553ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@ <0x579c95bf8d50>)
+
+2026-09-06T10:06:07Z [82,553ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_3.usda@ <0x579c95bf8d50>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/soda_can>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/soda_can_008/soda_can_008.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/soda_can>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/eggplant>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/eggplant/eggplant.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/eggplant>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/coffee_cup>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/coffee_cup_e01/coffee_cup_e01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/coffee_cup>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/banana>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,561ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_4.usda@ <0x579c95bfea40>)
+
+2026-09-06T10:06:07Z [82,570ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/soda_can>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/soda_can_008/soda_can_008.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/soda_can>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/coffee_cup>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/coffee_cup_e01/coffee_cup_e01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/coffee_cup>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/eggplant>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/eggplant/eggplant.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/eggplant>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/recycle_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/green_recycle_container_004/green_recycle_container_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/recycle_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/trash_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/black_office_trash_can/black_office_trash_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/trash_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/banana>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/beer_bottle>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/beer_bottle_003/beer_bottle_003.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/beer_bottle>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,571ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/compost_bin>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/beige_office_compost_can/beige_office_compost_can.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@</world/compost_bin>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/wk_recycle_sort_5.usda@ <0x579c95c02cd0>)
+
+2026-09-06T10:06:07Z [82,633ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/large_plastic_plate>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/large_plastic_plate/large_plastic_plate.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_behind_bowl.usda@</world/large_plastic_plate>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_behind_bowl.usda@ <0x579c95c0dfb0>)
+
+2026-09-06T10:06:08Z [82,652ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl_019>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_019/bowl_019.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_size_biggest_fruit.usda@</world/bowl_019>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_size_biggest_fruit.usda@ <0x579c95c18630>)
+
+2026-09-06T10:06:08Z [82,721ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/white_crate_002>: Could not open asset @/workspace/RoboLab/assets/objects/simready/storage_containers/white_crate_002/white_crate_002.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_negate_except_tallest.usda@</world/white_crate_002>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_negate_except_tallest.usda@ <0x579c95c33650>)
+
+2026-09-06T10:06:08Z [82,730ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/open_cardboard_box_004>: Could not open asset @/workspace/RoboLab/assets/objects/simready/boxes_packaging/open_cardboard_box_004/open_cardboard_box_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_size_extremes_to_bin.usda@</world/open_cardboard_box_004>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_size_extremes_to_bin.usda@ <0x579c95c36a60>)
+
+2026-09-06T10:06:08Z [82,760ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/serving_bowl>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_005/bowl_005.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_negate_group_without_can.usda@</world/serving_bowl>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_negate_group_without_can.usda@ <0x579c95c3e660>)
+
+2026-09-06T10:06:08Z [82,772ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/serving_bowl>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_015/bowl_015.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_left_of_block.usda@</world/serving_bowl>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_left_of_block.usda@ <0x579c95c44930>)
+
+2026-09-06T10:06:08Z [82,821ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/open_cardboard_box_004>: Could not open asset @/workspace/RoboLab/assets/objects/simready/boxes_packaging/open_cardboard_box_004/open_cardboard_box_004.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_count_odd_even.usda@</world/open_cardboard_box_004>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_count_odd_even.usda@ <0x579c95c56e70>)
+
+2026-09-06T10:06:08Z [82,832ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/large_plastic_plate>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/large_plastic_plate/large_plastic_plate.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_row_split.usda@</world/large_plastic_plate>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_row_split.usda@ <0x579c95c58970>)
+
+2026-09-06T10:06:08Z [82,832ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl_015>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_015/bowl_015.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_row_split.usda@</world/bowl_015>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_row_split.usda@ <0x579c95c58970>)
+
+2026-09-06T10:06:08Z [82,841ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/cutting_board_b01>: Could not open asset @/workspace/RoboLab/assets/objects/simready/kitchenware/cutting_board_b01/cutting_board_b01.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_count_second_fourth.usda@</world/cutting_board_b01>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_count_second_fourth.usda@ <0x579c95c5cc40>)
+
+2026-09-06T10:06:08Z [82,861ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/plastic_basket>: Could not open asset @/workspace/RoboLab/assets/objects/simready/baskets/plastic_basket/plastic_basket.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_count_second_from_left_five.usda@</world/plastic_basket>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_count_second_from_left_five.usda@ <0x579c95c62380>)
+
+2026-09-06T10:06:08Z [82,880ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bowl_003>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_003/bowl_003.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_size_smallest_item.usda@</world/bowl_003>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_size_smallest_item.usda@ <0x579c95c6bd10>)
+
+2026-09-06T10:06:08Z [82,889ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/banana_2>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/banana_2/banana_2.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_size_sort_big_small.usda@</world/banana_2>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_size_sort_big_small.usda@ <0x579c95c6d120>)
+
+2026-09-06T10:06:08Z [82,889ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/bitter_melon>: Could not open asset @/workspace/RoboLab/assets/objects/simready/food_and_drink/bitter_melon/bitter_melon.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_size_sort_big_small.usda@</world/bitter_melon>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_size_sort_big_small.usda@ <0x579c95c6d120>)
+
+2026-09-06T10:06:08Z [82,910ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/mini_plastic_basket>: Could not open asset @/workspace/RoboLab/assets/objects/simready/baskets/plastic_basket/plastic_basket.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_split_by_block.usda@</world/mini_plastic_basket>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_spatial_split_by_block.usda@ <0x579c95c76320>)
+
+2026-09-06T10:06:08Z [82,920ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/open_cardboard_box_002>: Could not open asset @/workspace/RoboLab/assets/objects/simready/boxes_packaging/open_cardboard_box_002/open_cardboard_box_002.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_size_tallest_shortest_can.usda@</world/open_cardboard_box_002>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_size_tallest_shortest_can.usda@ <0x579c95c7a570>)
+
+2026-09-06T10:06:08Z [82,941ms] [Warning] [omni.usd] Warning: in _ReportErrors at line 3172 of /builds/omniverse/usd-ci/USD/pxr/usd/usd/stage.cpp -- In </world/serving_bowl>: Could not open asset @/workspace/RoboLab/assets/objects/simready/dishware/bowl_016/bowl_016.usda@ for payload introduced by @/workspace/RoboLab/assets/scenes/robovolo/xr_negate_two_exceptions.usda@</world/serving_bowl>. (instantiating stage on stage @/workspace/RoboLab/assets/scenes/robovolo/xr_negate_two_exceptions.usda@ <0x579c95c7e2c0>)
+
+[INFO] Subtask progress checking ON
+[INFO] Image observations recording OFF
+[INFO]: Parsing configuration from: <class 'robolab.core.environments.config.generate_task_env_cfg.<locals>.GeneratedTaskEnvCfg'>
+
+[36m======================================================================================[0m
+[36m[1m[INFO][IsaacLab]: Logging to file: /tmp/isaaclab/logs/isaaclab_2026-09-06_10-06-08.log[0m
+[36m======================================================================================[0m
+
+2026-09-06T10:06:08Z [83,146ms] [Warning] [isaacsim.core.simulation_manager.impl.simulation_manager] CCD is not supported on GPU, ignoring request to enable it
+[33m10:06:08 [simulation_context.py] WARNING: The `enable_external_forces_every_iteration` parameter in the PhysxCfg is set to False. If you are experiencing noisy velocities, consider enabling this flag. You may need to slightly increase the number of velocity iterations (setting it to 1 or 2 rather than 0), together with this flag, to improve the accuracy of velocity updates.[0m
+[INFO]: Base environment:
+	Environment device    : cuda:0
+	Environment seed      : 0
+	Physics step-size     : 0.008333333333333333
+	Rendering step-size   : 0.06666666666666667
+	Environment step-size : 0.06666666666666667
+[INFO]: Time taken for scene creation : 0.404217 seconds
+[INFO]: Scene manager:  <class InteractiveScene>
+	Number of environments: 1
+	Environment spacing   : 10.0
+	Source prim name      : /World/envs/env_0
+	Global prim paths     : []
+	Replicate physics     : True
+[INFO]: Starting the simulation. This may take a few seconds. Please wait...
+2026-09-06T10:06:13Z [88,460ms] [Warning] [omni.physx.cooking.plugin] ConvexDecompositionTask: failed to cook GPU-compatible mesh, collision detection will fall back to CPU. Collisions with particles and deformables will not work with this mesh. Prim /World/envs/env_0/scene/container_b03/Container_B03_01
+2026-09-06T10:06:18Z [93,000ms] [Error] [omni.physx.plugin] Physics scenes stepping is not the same, step subscription will be send with later step, per scene step is not yet supported.
+2026-09-06T10:06:53Z [127,721ms] [Warning] [omni.hydra] Parameter 'metallic' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_2e736805/Shader::::OmniPBR::OmniPBR((165))' not available in the MDL representation.
+2026-09-06T10:06:53Z [127,721ms] [Warning] [omni.hydra] Parameter 'roughness' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_2e736805/Shader::::OmniPBR::OmniPBR((165))' not available in the MDL representation.
+2026-09-06T10:06:55Z [130,616ms] [Warning] [omni.hydra] Parameter 'metallic' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_ddda6f80/OmniPBR::::OmniPBR::OmniPBR((190))' not available in the MDL representation.
+2026-09-06T10:06:55Z [130,616ms] [Warning] [omni.hydra] Parameter 'roughness' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_ddda6f80/OmniPBR::::OmniPBR::OmniPBR((190))' not available in the MDL representation.
+2026-09-06T10:07:04Z [139,120ms] [Warning] [rtx.postprocessing.plugin] DLSS increasing input dimensions: Render resolution of (501, 278) is below minimal input resolution of 300.
+2026-09-06T10:07:04Z [139,478ms] [Warning] [omni.hydra] Parameter 'metallic' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_2e736805/Shader::::OmniPBR::OmniPBR((165))' not available in the MDL representation.
+2026-09-06T10:07:04Z [139,478ms] [Warning] [omni.hydra] Parameter 'roughness' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_2e736805/Shader::::OmniPBR::OmniPBR((165))' not available in the MDL representation.
+2026-09-06T10:07:04Z [139,479ms] [Warning] [omni.hydra] Parameter 'metallic' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_ddda6f80/OmniPBR::::OmniPBR::OmniPBR((190))' not available in the MDL representation.
+2026-09-06T10:07:04Z [139,479ms] [Warning] [omni.hydra] Parameter 'roughness' of shade node 'usd::rtx_scope0::/__Fabric_StageInfo/MaterialPool/mat_ddda6f80/OmniPBR::::OmniPBR::OmniPBR((190))' not available in the MDL representation.
+[33m10:07:05 [actuator_pd.py] WARNING: The <ImplicitActuatorCfg> object has a value for 'effort_limit'. This parameter will be removed in the future. To set the effort limit, please use 'effort_limit_sim' instead.[0m
+[33m10:07:05 [actuator_pd.py] WARNING: The <ImplicitActuatorCfg> object has a value for 'velocity_limit'. Previously, although this value was specified, it was not getting used by implicit actuators. Since this parameter affects the simulation behavior, we continue to not use it. This parameter will be removed in the future. To set the velocity limit, please use 'velocity_limit_sim' instead.[0m
+[33m10:07:05 [articulation.py] WARNING: Not all actuators are configured! Total number of actuated joints not equal to number of joints available: 8 != 13.[0m
+[INFO]: Time taken for simulation start : 57.318128 seconds
+[INFO] Command Manager:  <CommandManager> contains 0 active terms.
++------------------------+
+|  Active Command Terms  |
++--------+-------+-------+
+| Index  | Name  |  Type |
++--------+-------+-------+
++--------+-------+-------+
+
+[INFO] Event Manager:  <EventManager> contains 1 active terms.
++-------------------------------+
+| Active Event Terms in Mode: 'reset' |
++---------------+---------------+
+|     Index     | Name          |
++---------------+---------------+
+|       0       | reset         |
++---------------+---------------+
+
+[INFO] Recorder Manager:  <RecorderManager> contains 0 active terms.
++---------------------+
+| Active Recorder Terms |
++-----------+---------+
+|   Index   | Name    |
++-----------+---------+
++-----------+---------+
+
+[INFO] Action Manager:  <ActionManager> contains 2 active terms.
++----------------------------------+
+|  Active Action Terms (shape: 8)  |
++-------+--------------+-----------+
+| Index | Name         | Dimension |
++-------+--------------+-----------+
+|   0   | body         |         7 |
+|   1   | finger_joint |         1 |
++-------+--------------+-----------+
+
+[INFO] Observation Manager: <ObservationManager> contains 3 groups.
++----------------------------------------------------------+
+|      Active Observation Terms in Group: 'image_obs'      |
++-------+---------------------------------+----------------+
+| Index | Name                            |     Shape      |
++-------+---------------------------------+----------------+
+|   0   | over_shoulder_left_camera       | (720, 1280, 3) |
+|   1   | over_shoulder_left_camera_K     |     (3, 3)     |
+|   2   | over_shoulder_left_camera_depth | (720, 1280, 1) |
+|   3   | over_shoulder_left_camera_pos   |      (3,)      |
+|   4   | over_shoulder_left_camera_quat  |      (4,)      |
+|   5   | wrist_cam                       | (720, 1280, 3) |
++-------+---------------------------------+----------------+
++------------------------------------------------+
+| Active Observation Terms in Group: 'proprio_obs' |
++-----------+------------------------+-----------+
+|   Index   | Name                   |   Shape   |
++-----------+------------------------+-----------+
+|     0     | arm_joint_pos          |    (7,)   |
+|     1     | gripper_pos            |    (1,)   |
+|     2     | ee_pos                 |    (3,)   |
+|     3     | ee_quat                |    (4,)   |
+|     4     | eef_pos                |    (3,)   |
+|     5     | eef_quat               |    (4,)   |
++-----------+------------------------+-----------+
++----------------------------------------------------------+
+|    Active Observation Terms in Group: 'viewport_cam'     |
++-------+----------------------------------+---------------+
+| Index | Name                             |     Shape     |
++-------+----------------------------------+---------------+
+|   0   | egocentric_mirrored_camera       | (480, 864, 3) |
+|   1   | egocentric_mirrored_camera_K     |     (3, 3)    |
+|   2   | egocentric_mirrored_camera_depth | (480, 864, 1) |
+|   3   | egocentric_mirrored_camera_pos   |      (3,)     |
+|   4   | egocentric_mirrored_camera_quat  |      (4,)     |
++-------+----------------------------------+---------------+
+
+[INFO] Termination Manager:  <TerminationManager> contains 2 active terms.
++-----------------------------+
+|   Active Termination Terms  |
++-------+----------+----------+
+| Index | Name     | Time Out |
++-------+----------+----------+
+|   0   | time_out |   True   |
+|   1   | success  |  False   |
++-------+----------+----------+
+
+[INFO] Reward Manager:  <RewardManager> contains 0 active terms.
++-----------------------+
+|  Active Reward Terms  |
++-------+------+--------+
+| Index | Name | Weight |
++-------+------+--------+
++-------+------+--------+
+
+[INFO] Curriculum Manager:  <CurriculumManager> contains 0 active terms.
++----------------------+
+| Active Curriculum Terms |
++-----------+----------+
+|   Index   | Name     |
++-----------+----------+
++-----------+----------+
+
+/workspace/envs/robolab/lib/python3.11/site-packages/isaaclab/source/isaaclab/isaaclab/envs/manager_based_rl_env.py:80: FutureWarning: [93m[1m[DEPRECATION WARNING] ManagerBasedEnvCfg.rerender_on_reset is deprecated. Use ManagerBasedEnvCfg.num_rerenders_on_reset instead.[0m
+  super().__init__(cfg=cfg)
+[INFO]: Completed setting up the environment...
+[96m┌──────────────────────────────────────────────────────────────┐
+│  Environment : SwapBinReplaceFruitsTask                      │
+├──────────────────────────────────────────────────────────────┤
+│  Instruction : Take the item out of the container and place it on the table. Then put the item that was on the table into the container. │
+│  Instr. Type : default                                       │
+│  Seed        : 0                                             │
+│  Policy      :                                               │
+│  Scene       : SwapBinReplaceFruitsTaskSceneEnvCfg           │
+│  Attributes  : memory, swapping, minimal_memory, simple      │
+└──────────────────────────────────────────────────────────────┘[0m
+L11_SMOKE_OK {"task": "SwapBinReplaceFruitsTask", "env": "SwapBinReplaceFruitsTask", "seed": 0, "steps": 8, "action_dim": 8, "cameras": {"egocentric_mirrored_camera": {"shape": [480, 864, 3], "std": 50.13130320261244, "output_keys": ["rgba", "rgb", "depth"]}, "over_shoulder_left_camera": {"shape": [720, 1280, 3], "std": 68.89565037276492, "output_keys": ["rgba", "rgb", "depth"]}, "wrist_cam": {"shape": [720, 1280, 3], "std": 58.80055187726175, "output_keys": ["rgba", "rgb"]}}}

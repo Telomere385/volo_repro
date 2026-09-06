@@ -13,7 +13,7 @@ from policies.volo.registration import register_volo_envs
 from robolab.core.environments.factory import get_envs
 from robolab.core.environments.runtime import create_env
 import torch
-root=Path("/root/volo-repro/results/l11-smoke")
+root=Path(__file__).resolve().parents[1]/"results"/"l11-smoke"
 root.mkdir(parents=True,exist_ok=True)
 env=None
 try:
