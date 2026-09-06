@@ -1,0 +1,42 @@
+{
+  "objects": [
+    {
+      "name": "wooden table",
+      "description": "a light-colored wooden table with visible grain patterns"
+    },
+    {
+      "name": "gray plastic tray",
+      "description": "a rectangular gray plastic tray with raised edges, placed on the wooden table"
+    },
+    {
+      "name": "banana",
+      "description": "a yellow banana with a green stem, resting inside the gray tray"
+    },
+    {
+      "name": "apple",
+      "description": "a red-yellow apple, sitting directly on the wooden table to the right of the tray"
+    },
+    {
+      "name": "perforated platform",
+      "description": "a gray platform with evenly spaced holes, located in the background behind the table"
+    },
+    {
+      "name": "white object",
+      "description": "a white cylindrical or conical object (possibly a cup or container) on top of the perforated platform"
+    }
+  ],
+  "description": "A high-angle view of a wooden table with a gray plastic tray holding a single banana. To the right of the tray, a red-yellow apple rests directly on the table surface. In the background, a gray perforated
+Traceback (most recent call last):
+  File "/workspace/volo_repro/scripts/check_vlm.py", line 20, in <module>
+    data=json.loads(raw)
+         ^^^^^^^^^^^^^^^
+  File "/.uv/python_install/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/.uv/python_install/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/.uv/python_install/cpython-3.11.15-linux-x86_64-gnu/lib/python3.11/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+               ^^^^^^^^^^^^^^^^^^^^^^
+json.decoder.JSONDecodeError: Unterminated string starting at: line 28 column 18 (char 901)

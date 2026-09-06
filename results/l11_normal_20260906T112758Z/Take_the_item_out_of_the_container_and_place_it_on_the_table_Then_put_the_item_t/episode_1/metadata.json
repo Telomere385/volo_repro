@@ -1,0 +1,14 @@
+{
+  "episode_id": 1,
+  "original_instruction": "Take the item out of the container and place it on the table. Then put the item that was on the table into the container.",
+  "start_timestamp": 1788694117.8351462,
+  "end_timestamp": 1788694285.5987325,
+  "infer_count": 57,
+  "subgoals": [
+    "Pick up the banana from the grey container",
+    "Place the banana on the wooden table",
+    "Pick up the apple from the wooden table",
+    "Place the apple into the grey container"
+  ],
+  "subgoals_ordered": true
+}

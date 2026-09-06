@@ -75,3 +75,18 @@
 - 内嵌 L11 初始场景 PNG，补充三个相机信息、π0.5 推理和 baseline 实测数据，明确 success=false 及 VLM 401 停止点。
 - 将 baseline 原始 episode_results.jsonl 复制到本仓库 results/l11_baseline_20260906T100957Z/；大视频仍在 RoboLab/output，README 记录路径。
 - 未运行新实验、修改 API 配置或提交/推送 Git。
+
+## VLM 重新验证（2026-09-06）
+- 用户更新 API 后，在独立 Bash 中执行检查，避免 common.sh 的 set -e 使交互终端退出。
+- 新 API 已成功识图，但旧脚本 max_tokens=256 导致 JSON 截断，报 Unterminated string。
+- 修正 check_vlm.py：max_tokens=1024、要求简短 JSON、打印 finish_reason 并明确检测 length 截断。
+- 再次请求通过，退出码 0，FINISH_REASON stop，VISION_API_OK；识别香蕉在托盘内、苹果在旁边桌面。日志 logs/current/vlm-recheck-fixed.log。
+- API 认证阻塞已解除；本次仅验证图片 API，未启动 normal episode。下一步运行 bash scripts/run_experiment.sh normal，检查真实 success。
+
+## L11 完整任务成功（2026-09-06）
+- 用户运行 normal 后请求检查；run_id=l11_normal_20260906T112758Z。
+- 原始评测 JSONL：success=true，score=1.0，853 步，56.8667s 仿真时间，165.404s 动作循环墙钟，reason=Completed subtask 'pick_and_place' 2/2。
+- 代理 metadata：57 次推理，4 个有序子目标。rewrites.jsonl：1 次 decompose，5 次 vlm_detect（3 次 complete/next、2 次 in_progress/continue）。
+- 已验证 pretrained π0.5 + 真实远程 VLM 的分解、执行、监控和任务成功；未触发 replan，不声称验证故障恢复。按用户 success=true 标准，本轮目标已完成。
+- 结果 JSONL 已复制到 results/l11_normal_20260906T112758Z/；README 更新当前成功状态和数据。完整视频留在 /workspace/RoboLab/output/l11_normal_20260906T112758Z/SwapBinReplaceFruitsTask/。
+- 本次只检查结果和更新记录，没有启动新实验；后续可另选重复评测或恢复实验，非本轮必需。

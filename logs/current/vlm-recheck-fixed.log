@@ -1,0 +1,6 @@
+{
+  "objects": ["banana", "apple", "tray", "table", "pedestal"],
+  "description": "A yellow banana rests inside a gray plastic tray on a wooden table, with a red apple beside the tray; in the background, a white pedestal with a cylindrical object sits atop a perforated gray platform."
+}
+FINISH_REASON stop
+VISION_API_OK

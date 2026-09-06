@@ -2,7 +2,7 @@
 
 不训练、不微调模型，目标是在 RoboVoLo **L11 `SwapBinReplaceFruitsTask`** 中完成：先将香蕉从容器移到桌面，再将苹果放进容器。本轮以真实评测输出 **`success=true`** 为成功标准。
 
-**截至 2026-09-06：仿真 smoke、π0.5 真实推理、passthrough baseline 已跑通；baseline 任务失败，VLM 闭环尚未完成。** VLM 图片请求返回 `401 invalid_api_key`，需要修正本地 API 配置后继续。
+**截至 2026-09-06：pretrained π0.5 + 远程 VLM 的 L11 完整任务已成功，`success=true`、score=1.0。** baseline 失败，normal 成功；本次验证了目标分解、执行与 VLM 进度监控，未触发重规划，不据此宣称故障恢复已验证。
 
 本仓库保存复现说明、补丁、脚本和选定结果，**不是离线可运行的完整安装包**。四个上游仓库、Python 环境和大型资产分布在 `/workspace` 下。持续执行记录见 [codex.md](codex.md)。[HANDOFF.md](HANDOFF.md) 是旧 RTX 5090 机器的历史交接，不能用其中的状态和路径覆盖本页的新配置。
 
@@ -35,7 +35,7 @@
 | 任务结果 | **`success=false`，score=0.5** |
 | 运行长度 | 900 步，60s 仿真时间；动作循环墙钟 145.452s |
 | 未完成原因 | `object_grabbed(object=apple_01)` 条件未满足 |
-| VLM | 真实场景图片请求返回 HTTP 401；未运行 normal episode |
+| VLM | 图片检查通过；normal episode 成功，见下文 |
 
 baseline 验证了“仿真观测 → 代理 → π0.5 → 仿真动作 → 结果/视频”的链路，**不代表任务成功或 VoLo 效果已复现**。这里只运行了一个 baseline episode。
 
@@ -60,6 +60,26 @@ baseline 验证了“仿真观测 → 代理 → π0.5 → 仿真动作 → 结�
 ```
 
 实际结果是实验根目录的 `episode_results.jsonl`，不是上游 README 示例中的任务目录 `episode_results.json`。大视频未复制进本备份仓库，迁移时需另行传输上述目录。
+
+### VLM normal 成功结果
+
+运行 `l11_normal_20260906T112758Z`，seed=0，1 episode；策略为 subgoal + VLM monitor + replan（允许重规划，但本次未触发）。
+
+| 指标 | 结果 |
+|---|---|
+| success / score | **true / 1.0** |
+| 仿真步数 / 时间 | 853 / 56.867s |
+| 动作循环墙钟 | 165.404s |
+| 最终原因 | `Completed subtask 'pick_and_place' 2/2` |
+| 代理推理请求数 | 57 |
+| VLM 记录 | 1 次分解 + 5 次进度检查；3 次 next，2 次 continue |
+
+VLM 分解为：拿起容器中的香蕉 → 放到桌上 → 拿起桌上的苹果 → 放入容器。任务由仿真成功条件结束，最后一次 VLM 检查并非最终成功判据。本次没有 replan 事件，不是故障恢复实验。baseline 与 normal 各仅 1 次，不代表统计成功率。
+
+- [normal 原始评测结果](results/l11_normal_20260906T112758Z/episode_results.jsonl)
+- [normal 代理事件与 metadata](results/l11_normal_20260906T112758Z/)
+- [normal 仿真日志](logs/l11_normal_20260906T112758Z.log)
+- 完整视频与逐步日志：`/workspace/RoboLab/output/l11_normal_20260906T112758Z/SwapBinReplaceFruitsTask/`（仓库外）。
 
 ## 已验证机器与环境划分
 
@@ -242,7 +262,7 @@ source /workspace/volo_repro/scripts/common.sh
   /workspace/volo_repro/results/l11-smoke/egocentric_mirrored_camera.png
 ```
 
-要求返回场景 JSON 并打印 `VISION_API_OK`。本机目前停在此处：`401 invalid_api_key`，需核对密钥与 endpoint 的服务/地域。
+要求返回场景 JSON 并打印 `VISION_API_OK`。本机更新 API 后已通过此检查。旧 256-token 上限曾截断 JSON，检查脚本现使用 1024 tokens、简短输出提示及 finish_reason 检查。验证日志见 [VLM recheck](logs/current/vlm-recheck-fixed.log)。
 
 通过之后再执行：
 
