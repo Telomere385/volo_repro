@@ -69,3 +69,9 @@
 - 等待用户修正本地 VLM 配置；修正后先运行 scripts/check_vlm.py 验证场景识别，再 bash scripts/run_experiment.sh normal，核对 episode_results.jsonl 的 success。
 - volo_pi05 和 volo_orch 保持 RUNNING，仅本机 8000/8001；代理当前 passthrough，仿真已退出。main 环境及桌面管理服务未修改。
 - 用户似乎将 config.env.example 重命名为 config.env（Git 显示 example 删除）；未覆盖用户配置。密钥文件被 Git 忽略且权限 600。
+
+## 文档更新（2026-09-06）
+- README 已改为当前 4090 机器的复现入口：环境/仓库固定版本、外部资产位置、安装与运行命令、结果与迁移说明。
+- 内嵌 L11 初始场景 PNG，补充三个相机信息、π0.5 推理和 baseline 实测数据，明确 success=false 及 VLM 401 停止点。
+- 将 baseline 原始 episode_results.jsonl 复制到本仓库 results/l11_baseline_20260906T100957Z/；大视频仍在 RoboLab/output，README 记录路径。
+- 未运行新实验、修改 API 配置或提交/推送 Git。
