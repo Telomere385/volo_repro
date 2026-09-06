@@ -47,19 +47,18 @@ baseline 验证了“仿真观测 → 代理 → π0.5 → 仿真动作 → 结�
 - [baseline 仿真日志](logs/l11_baseline_20260906T100957Z.log)
 - [代理事件与 metadata](results/l11_baseline_20260906T100957Z/)
 
-完整视频、逐步状态和环境配置留在仓库外：
+完整视频、逐步状态和环境配置目前已复制到本仓库：
 
 ```text
-/workspace/RoboLab/output/l11_baseline_20260906T100957Z/
-├── episode_results.jsonl
+/workspace/volo_repro/results/l11_baseline_20260906T100957Z/robolab_output/
 └── SwapBinReplaceFruitsTask/
     ├── env_cfg.json
     ├── log_0_env0.json
-    ├── <instruction>_0.mp4
-    └── <instruction>_0_viewport.mp4
+    ├── run_0.hdf5
+    └── *.mp4
 ```
 
-实际结果是实验根目录的 `episode_results.jsonl`，不是上游 README 示例中的任务目录 `episode_results.json`。大视频未复制进本备份仓库，迁移时需另行传输上述目录。
+实际结果是实验根目录的 `episode_results.jsonl`，不是上游 README 示例中的任务目录 `episode_results.json`。
 
 ### VLM normal 成功结果
 
@@ -74,12 +73,23 @@ baseline 验证了“仿真观测 → 代理 → π0.5 → 仿真动作 → 结�
 | 代理推理请求数 | 57 |
 | VLM 记录 | 1 次分解 + 5 次进度检查；3 次 next，2 次 continue |
 
-VLM 分解为：拿起容器中的香蕉 → 放到桌上 → 拿起桌上的苹果 → 放入容器。任务由仿真成功条件结束，最后一次 VLM 检查并非最终成功判据。本次没有 replan 事件，不是故障恢复实验。baseline 与 normal 各仅 1 次，不代表统计成功率。
+本次 VLM 调用的决策为：先将香蕉移出容器并放到桌上，再拿起苹果放回容器。执行期间的进度检查根据当前画面选择继续或进入下一子目标，最终确认两个子目标完成；没有触发 replan。任务由仿真成功条件结束，baseline 与 normal 各仅 1 次，不代表统计成功率。
+
+### Baseline 与 VLM normal 视频对比
+
+两个实验都使用同一个 L11 任务和初始场景；normal 额外启用了 VLM 子目标分解与进度监控。表中的普通相机视频用于观察机器人动作，viewport 视频用于查看仿真视口。
+
+| 实验 | 结果 | 普通相机视频 | Viewport 视频 |
+|---|---|---|---|
+| Baseline / passthrough | `success=false`, score=0.5 | [播放 MP4](results/l11_baseline_20260906T100957Z/robolab_output/SwapBinReplaceFruitsTask/Take_the_item_out_of_the_container_and_place_it_on_the_table_Then_put_the_item_that_was_on_the_table_into_the_container_0.mp4) | [播放 MP4](results/l11_baseline_20260906T100957Z/robolab_output/SwapBinReplaceFruitsTask/Take_the_item_out_of_the_container_and_place_it_on_the_table_Then_put_the_item_that_was_on_the_table_into_the_container_0_viewport.mp4) |
+| VLM normal / subgoal | `success=true`, score=1.0 | [播放 MP4](results/l11_normal_20260906T112758Z/robolab_output/SwapBinReplaceFruitsTask/Take_the_item_out_of_the_container_and_place_it_on_the_table_Then_put_the_item_that_was_on_the_table_into_the_container_0.mp4) | [播放 MP4](results/l11_normal_20260906T112758Z/robolab_output/SwapBinReplaceFruitsTask/Take_the_item_out_of_the_container_and_place_it_on_the_table_Then_put_the_item_that_was_on_the_table_into_the_container_0_viewport.mp4) |
+
+视频是完整 episode 记录；baseline 和 normal 各只有 1 次运行，不能据此估计成功率。
 
 - [normal 原始评测结果](results/l11_normal_20260906T112758Z/episode_results.jsonl)
 - [normal 代理事件与 metadata](results/l11_normal_20260906T112758Z/)
 - [normal 仿真日志](logs/l11_normal_20260906T112758Z.log)
-- 完整视频与逐步日志：`/workspace/RoboLab/output/l11_normal_20260906T112758Z/SwapBinReplaceFruitsTask/`（仓库外）。
+- 完整视频与逐步日志：[normal robolab_output](results/l11_normal_20260906T112758Z/robolab_output/)。原始输出仍保留在 `/workspace/RoboLab/output/l11_normal_20260906T112758Z/SwapBinReplaceFruitsTask/`。
 
 ## 已验证机器与环境划分
 
